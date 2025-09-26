@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Stay Locked</h1>
+        <a href="#" id="Home" title="Home" class="bHeader">Home</a>
+        <a href="#" id="Apps" title="Apps" class="bHeader">Blocked Apps</a>
+        <a href="#" id="Friends" title="Friends" class="bHeader">Friends</a>
+        <a href="#" id="Motivation" title="Motivation" class="bHeader">Motivation</a>
+    </header>
+
+    <div id="motivation">
+        <h3>
+            " THEY DONT KNOW ME SON !!! - goggins"
+        </h3>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2gN6stQF2qgmf9unosL1Du?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+    </div>
+
+    <div id="dApps" style="display: none;">
+        <div class="app">
+            <h2>Discord</h2>
+            <a id="toggle">off</a>
+        </div>
+    </div>
+    <div id="friends" style="display: none;"></div>
+    <div id="stats" style="display: none;"></div>
+
+    <a id="key" href="#">LOCK IN</a>
+
+    <div id="warning" style="display:none;">
+        <p style="text-align: center;">
+            Locking in will block the selected apps from running, key for unlock will be sent to a friend.
+        </p>
+        <div style="display: flex; flex-direction: row; justify-content: space-around;">
+            <button id="accept-lock" style="width: auto;">Accept</button>
+            <button id="decline-lock" style="width: auto;">Decline</button>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
